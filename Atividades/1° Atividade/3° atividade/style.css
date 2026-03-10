@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+#pagina {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: #1e3a8a;
+    color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+nav {
+    background: #2563eb;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #cfe3ff;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #2563eb;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #1e40af;
+}
+
+article {
+    margin-bottom: 18px;
+}
+
+article h3 {
+    color: #1d4ed8;
+    margin-bottom: 5px;
+}
+
+aside {
+    background: #eef4ff;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+blockquote {
+    border-left: 4px solid #2563eb;
+    padding-left: 10px;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+code, pre {
+    background: #eef3ff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+pre {
+    padding: 10px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background: #f2f6ff;
+}
+
+form {
+    margin-top: 15px;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #1e40af;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background: #2563eb;
+    color: white;
+    border: none;
+    margin-top: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #1e40af;
+}
+
+footer {
+    background: #1e3a8a;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+    margin-top: 5px;
+}
+
+details {
+    margin-top: 8px;
+}
+
+summary {
+    cursor: pointer;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
