@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Jogador da Copa do Mundo</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg-copa {
+            background-image: url('img/FIFA-World-Cup-26.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            padding: 20px;
+        }
+
+        #Cards {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 24px;
+        }
+
+        .card {
+            width: 22rem;
+            backdrop-filter: blur(5px);
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .lucas-img {
+            object-position: 60% top;
+            transform: scale(1.6);
+            transform-origin: 60% top;
+        }
+
+        @keyframes entrar {
+            from { opacity: 0; transform: translateX(60px); }
+            to   { opacity: 1; transform: translateX(0); }
+        }
+
+        .card-entrada {
+            animation: entrar 0.4s ease forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-copa">
+        <div id="Cards">
+            <div class="card" style="width: 22rem;">
+                <img src="img/_vinicius_junior.png" class="card-img-top" alt="Vinicius Junior">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <span>Vini JR.</span>
+                        <span id="Rank" class="badge text-bg-secondary">9,5</span>
+                    </h5>
+                    <p class="card-text">
+                        <span id="Data_Nas"><strong>Nascimento:</strong> 12/07/2000 </span><br>
+                        <span id="Altura"><strong>Altura:</strong> 1,76 m</span><br>
+                        <span id="Posicao"><strong>Posição:</strong> Ponta-esquerda / Atacante</span><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" onclick="add()" class="btn btn-primary" style="padding: 10px 24px;">
+            Adicionar Novo Jogador
+        </button>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

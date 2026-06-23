@@ -261,6 +261,68 @@ body > h2:first-of-type {
 	transform: translateX(3px);
 }
 
+/* Details / Prova dropdown */
+#bime2 details {
+    flex: 1;
+}
+
+#bime2 details summary {
+    display: flex;
+    align-items: center;
+    min-height: 52px;
+    padding: 14px 18px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    user-select: none;
+}
+
+#bime2 details summary::-webkit-details-marker {
+    display: none;
+}
+
+#bime2 details summary::before {
+    content: "→";
+    margin-right: 10px;
+    color: var(--accent);
+    transition: transform 180ms ease;
+}
+
+#bime2 details[open] summary::before {
+    content: "↓";
+}
+
+#bime2 details summary:hover {
+    transform: translateY(-2px);
+    border-color: rgba(125, 211, 252, 0.45);
+    box-shadow: 0 18px 35px rgba(2, 6, 23, 0.28);
+}
+
+#bime2 details > ul {
+    margin-top: 8px;
+    padding-left: 16px;
+}
+
+#bime2 details > ul li a {
+    min-height: 36px;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(148, 163, 184, 0.1);
+}
+
+#bime2 details > ul li a::before {
+    content: "↳";
+    color: var(--muted);
+}
+
 /* Scroll reveal */
 .reveal {
 	opacity: 0;
